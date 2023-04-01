@@ -1,34 +1,80 @@
 body{
-    font-family: smokum;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
+
+
 
 h1{
     color: red;
 }
 
-.schedule table{
+#projects table{
     border: 0.1em solid black;
     border-collapse: collapse;
     width: 95%;
     margin-left: 2.5%;
     background-color: white;
 }
-.schedule caption{
+#projects caption{
     border: 0.1em solid black;
     font-size: 1.5em;
     font-weight: bold;
 }
-.schedule th, .schedule td{
+#projects th, #projects td{
     border: 0.1em solid black;
     padding: 0.5em;
     text-align: center;
 }
-.schedule th{
+#projects th{
     background-color: black;
     color: white;
+}
+
+/*CERT page */
+
+#body1{
+    background: linear-gradient(to bottom, #1A2980, #12D0CE);
+}
+#images{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  
+#images img{
+    
+    width: 380px;
+    height: 380px;
+    
+    border-radius: 10%;
+  }
+#certlink{
+    width:240px;
+    height:240px;
+}
+/*Certificate full size style*/
+#fullsize{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+#fullsize img{
+    border: solid red ;
+}
+figcaption{
+    font-family: helvetica;
+    font-size: 18px;
+    color: white;
+}
+#body2{
+    background-color: black;
+}
+#navbar2{
+    color: white;
+    position: fixed;
+    
 }
