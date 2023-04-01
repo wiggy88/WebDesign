@@ -2,6 +2,10 @@ img{
     width: 100px;
     height: 100px;
 }
+img:hover{
+    width:600px;
+    height:600px;
+}
 h1{
     color: red;
 }
