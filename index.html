@@ -13,7 +13,7 @@
     
     <body id="mainbody">
         <h1 id="title">Portfolio Page</h1>
-        <div class="navbar">
+        <div id="navbar">
             <ul>
                
                <a href=#contactbox><li>Contact</li></a>
@@ -77,6 +77,23 @@
             <img id="phone" src="images\phone_logo.jpg">
             <img id="email" src="images\postbox.jpg">
         </div>
+
+        <script>
+            const image = document.getElementById("phone");
+            image.addEventListener("click", function() {
+              const imageWidth = image.offsetWidth;
+              const imageHeight = image.offsetHeight;
+              image.style.display = "none";
+              const textDiv = document.createElement("div");
+              textDiv.textContent = "Sam Williams";
+              textDiv.style.display = "block";
+              textDiv.style.width = imageWidth + "px";
+              textDiv.style.height = imageHeight + "px";
+              textDiv.setAttribute("id", "textDiv");
+              image.parentNode.appendChild(textDiv);
+            });
+          </script>
+       
 
         
 

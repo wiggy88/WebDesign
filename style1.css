@@ -10,6 +10,15 @@ body{
     color: white;
 
 }
+.navbar{
+    height:50px;
+    width:140px;
+    border: solid black;
+    background-color: black;
+    border-radius: 10%;
+    
+}
+
 .navbar li{
     display: inline;
     padding: 10%
@@ -28,13 +37,14 @@ body{
 }
 
 a{
-    
+    color: white;
     text-decoration: none;
 }
 
 h1{
     color: red;
     text-align: center;
+    font-family: alkatra;
 }
 h2{
     text-align: center;
