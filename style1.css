@@ -107,6 +107,7 @@ h2{
 }
 #fullsize img{
     border: solid red ;
+    max-width: 100%;
 }
 figcaption{
     font-family: helvetica;
@@ -117,9 +118,11 @@ figcaption{
     background-color: black;
 }
 #navbar2{
-    
+    width: 150px;
+    height: 50px;
+    background-color: black;
     position: fixed;
-    
+    opacity: 0.5
 }
 .nav-a{
     color: white;
@@ -133,6 +136,8 @@ figcaption{
     #fullsize{
         display:flex;
         flex-flow: column;
+        
+        justify-content: center;
         align-items: center;
         
         
@@ -142,6 +147,12 @@ figcaption{
     }
     #email{
         width:100%;
+    }
+    #java{
+        max-width: 375px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     
