@@ -23,7 +23,7 @@
         
         <div>
             <h2>Certificates</h2>
-           
+            <h3>Click the image</h3>
             
            <div id="certificates"> 
                 <a id ="certlink2" href="certs.html">
@@ -79,20 +79,30 @@
         </div>
 
         <script>
-            const image = document.getElementById("phone");
-            image.addEventListener("click", function() {
-              const imageWidth = image.offsetWidth;
-              const imageHeight = image.offsetHeight;
-              image.style.display = "none";
-              const textDiv = document.createElement("div");
-              textDiv.textContent = "Sam Williams";
-              textDiv.style.display = "block";
-              textDiv.style.width = imageWidth + "px";
-              textDiv.style.height = imageHeight + "px";
-              textDiv.setAttribute("id", "textDiv");
-              image.parentNode.appendChild(textDiv);
+            const phoneImage = document.getElementById("phone");
+            const emailImage = document.getElementById("email");
+
+            phoneImage.addEventListener("click", function() { 
+                const imageWidth = phoneImage.offsetWidth;
+                const imageHeight = phoneImage.offsetHeight;
+                phoneImage.style.display = "none";
+                const textDiv = document.createElement("div");
+                textDiv.textContent = "Sam Williams";
+                textDiv.style.display = "block";
+                textDiv.style.width = imageWidth + "px";
+                textDiv.style.height = imageHeight + "px";
+                textDiv.setAttribute("id", "textDiv");
+                phoneImage.parentNode.appendChild(textDiv);
+           });
+
+                emailImage.addEventListener("click", function() {
+                const textDiv = document.getElementById("textDiv");
+                if (textDiv) {
+                    textDiv.parentNode.removeChild(textDiv);
+                    phoneImage.style.display = "inline-block";
+                }
             });
-          </script>
+        </script>
        
 
         
