@@ -1,5 +1,7 @@
+html, 
 body{
     font-family:Arial, Helvetica, sans-serif;
+    height: 100%;
 }
 #mainbody{
     background-color: lightgrey;
@@ -49,7 +51,9 @@ h1{
 h2{
     text-align: center;
 }
-
+h3{
+    text-align: center;
+}
 #projects table{
     border: 0.1em solid black;
     border-collapse: collapse;
@@ -80,7 +84,8 @@ h2{
 /*CERT page */
 
 #body1{
-    background: linear-gradient(to bottom, #1A2980, #12D0CE);
+    background: linear-gradient(to bottom, #1A2980, #107DAC 50%, #12D0CE);
+    height:100%;
 }
 #images{
 
@@ -88,12 +93,14 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    
+    
 }
   
 #images img{
     
-    width: 380px;
-    height: 380px;
+    width: 120px;
+    height: 120px;
     
     border-radius: 10%;
 }
