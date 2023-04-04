@@ -15,12 +15,22 @@ body{
     padding: 10%
 }
 
+#certificates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certlink{
+    width:230px;
+    height:230px;
+    border: solid black;   
+}
+
 a{
     
     text-decoration: none;
 }
-
-
 
 h1{
     color: red;
@@ -77,15 +87,7 @@ h2{
     
     border-radius: 10%;
 }
-#certlink{
-    
-    width:240px;
-    height:240px;
-    border: solid black;
-    
-    
-    
-}
+
 /*Certificate full size style*/
 #fullsize{
     display:flex;
@@ -109,7 +111,7 @@ figcaption{
     position: fixed;
     
 }
-#nav-a{
+.nav-a{
     color: white;
 }
 figcaption{
@@ -154,4 +156,7 @@ figcaption{
         width:300px;
     }
 
+}
+#text{
+    display: none; 
 }
