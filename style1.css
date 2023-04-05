@@ -3,6 +3,11 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     height: 100%;
 }
+#computer-choice{
+    font-weight: bold;
+    font-size: 25px;
+    
+}
 #mainbody{
     background-color: lightgrey;
     background-image: url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bm9ydGhlcm4lMjBsaWdodHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
