@@ -12,9 +12,12 @@ $(document).ready(function() {
   }
 
   function computerPlay() {
+    
     const choices = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
+    
+    
   }
 
   $('#rock-btn, #paper-btn, #scissors-btn').on('click', function() {
@@ -22,5 +25,7 @@ $(document).ready(function() {
     const computerSelection = computerPlay();
     const result = playRound(playerSelection, computerSelection);
     $('#result').text(result);
-  });
+    $('#computer-choice').text('Computer chose ' + computerSelection);
+    
+});
 });
