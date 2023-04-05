@@ -237,13 +237,8 @@ figcaption{
   color: red;
   }
   
-  @media only screen and (max-width: 375px ){
-  
-  
-    button{
-      
+#rockpaper{
+    font-style: italic;
+    font-weight: bold;
     
-   
-  
-  
-  }
+}
